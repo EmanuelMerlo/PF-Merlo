@@ -4,20 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <!-- link de css -->
     <link rel="stylesheet" href="../styles/style.css" />
     <title>Pilotos</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html" class="logo">Inicio</a></li>
-          <li><a href="nosotros.html" class="nosotros">Nosotros</a></li>
-          <li><a href="equipos.html" class="equipos">Equipos</a></li>
-          <li><a href="pilotos.html" class="pilotos">Pilotos</a></li>
-          <li><a href="calendario.html" class="calendario">Calendario</a></li>
-          <li><a href="clasificacion.html" class="clasificacion">Clasificación</a></li>
-        </ul>
+      <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <h4>Fórmula 1</h4>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fórmula 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="equipos.html">Equipos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pilotos.html">Pilotos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="clasificacion.html">Clasificación</a>
+                </li>              
+                <li class="nav-item">
+                  <a class="nav-link" href="calendario.html">Calendario</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -75,5 +105,9 @@
         <a href="https://www.linkedin.com/in/emanuel-merlo-2065491a9/">Sitio web creado por Emanuel Alejandro Merlo</a>
       </ul>
     </footer>
+    <!-- link de script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
   </body>
 </html>

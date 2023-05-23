@@ -18,9 +18,7 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-p {
-  font-size: 2rem;
-}
+
 
 main {
   color: black;
@@ -34,16 +32,19 @@ header {
 .navbar {
   background-color: rgb(255, 0, 0); 
   padding: 5px;
-  border-radius: 0px 0px 45px 45px;
+  border-bottom-right-radius:60px;
   height: 100px;
   box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
 }
 .navbar-nav {
   text-align: center;
-  padding:15px 0px;
-  margin: 0px;
+  padding:25px 10px;
+  margin-right: 10px;
 }
-
+.navbar-toggler {
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
 .nav-item {
   display: inline-block;
   padding:15px;
@@ -51,11 +52,11 @@ header {
 
 .nav-link {
   text-decoration: none;
-  color: white;
-  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 1.75em;
 }
 .navbar-brand h4 {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   padding: 35px;
 }
 
@@ -63,7 +64,7 @@ h1 {
   font-family: "Bruno Ace", cursive;
   text-align: center;
   color: rgb(228, 28, 28);
-  font-size: 4rem;
+  font-size: 4em;
   top: 50px;
 }
 
@@ -75,20 +76,29 @@ h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3em;
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 h4 {
-  font-size: 2rem;
+  font-size: 2em;
+}
+h5 {
+  font-size: 1.75em;
+}
+p {
+  font-size: 2em;
+}
+a {
+  font-size: 1.75em;
 }
 
 footer {
   background-color: rgb(0, 0, 0);
   margin-top: 100px;
   text-align: center;
-  border-radius: 45px 45px 0px 0px;
+  border-radius: 0px 90px 0px 0px;
 }
 footer ul {
   text-align: center;
@@ -116,6 +126,8 @@ footer a svg:hover{
 }
 
 .footer-ul2 a {
+  font-size: 2em;
+  text-decoration: none;
   color:rgb(128, 128, 128);
   transition: .4s;
 }
@@ -146,27 +158,42 @@ img {
   top: -50px;
 }
 
-.carousel-item img {
+.index-portada .carousel-item img {
   height: 100vh;
   object-fit: cover;
 }
-
-a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
+.carousel-caption {
+  padding: 50px;
 }
-
-.index-portada h4 {
-  color: rgb(255, 255, 255);
+.carousel-caption a {
+  text-decoration: none;
+  font-family: "Bruno Ace", cursive;  
+  color: rgb(0,0,0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 15px;
+  font-size: 1.5em;
+  box-shadow: 0px 10px 0px 0px rgb(0, 0, 0);
+  transition: .4s;
+}
+.carousel-caption a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 24px 5px rgb(0, 0, 0);
+  transition: .4s;
+}
+.carousel-item-image1 {
+  background-position: 10px 10px;
 }
 
 /* section 2 */
 
 .index-imgs {
-  display: flex;
-  flex-direction:row;
-  justify-content: space-evenly;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  
 }
 
 .index-imgs img {
@@ -184,10 +211,6 @@ a {
 
 }
 
-.section-card {
-  width: 30%;
-}
-
 .card-text {
   text-align: center;
 }
@@ -197,11 +220,10 @@ a {
   padding:5px;
 }
 
-.index-imgs p {
+.section-card p {
   text-align: start;
   border-left: 5px solid rgb(128, 128, 128);
   padding-left: 8px;
-  font-size: 20px;
 }
 
 /* section 3 */
@@ -238,8 +260,8 @@ a {
   grid-area: music;
 }
 
-.c1 iframe, .c2 iframe, .index-video aside {
-  width: 49%;
+.c1 iframe, .c2 iframe, .c1 div, .c2 div {
+  width: 50%;
   align-self: center;
 }
 
@@ -253,68 +275,45 @@ a {
   padding: 150px 50px 50px 50px;
 }
 
-.historia-contain div {
-  margin-bottom: 50px;
-}
-
 .historia-contain-que-es {
-  display: flex;
-  gap:130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:50px;
   background-color: rgb(244, 244, 244);
   padding: 50px;
   border-radius: 25px;
-  height: 700px;
+  align-items: center;
+  margin-bottom: 60px;
 }
+
 .historia-contain-que-es img {
-  width: 45%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
-.historia-contain-que-es article {
-  overflow: auto;
-  align-self:center;
-}
-
-.historia-contain-que-es article h2 {
+.historia-contain-que-es article h2{
   text-align: center;
 }
 
 .historia-contain-historia {
+  display: grid;
+  grid-template-columns: .4fr 1fr 2fr;
+  column-gap: 30px;
   background-color: rgb(244, 244, 244);
   border-radius: 25px;
-  height: 700px;
   padding: 50px;
 }
 
-.historia-contain-historia  div{
-  display: flex;
-  gap:130px;
-}
-
-.historia-contain-historia article {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  height: 530px;
+.historia-contain-historia-article {
+  height: 650px;
   overflow: auto;
 }
-
-.historia-contain-historia aside {
+.carousel-fade {
   display: flex;
-  flex-direction: column;
-  width: 45%;
-  height: 530px;
-  overflow: auto;
-  gap:50px;
+  justify-content: center;
+  align-items: center;
 }
-
-.historia-contain-historia img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 25px;
+.carousel-item img {
+  padding: 20px 0px 0px 0px;
 }
 
 /* ----------------- equipos ------------------ */
@@ -401,7 +400,7 @@ a {
 
 .section-div h2:hover {
   text-align: left;
-  font-size: 40px;
+  font-size: 3.75em;
   transition: .4s;
 }
 .d1 h2:hover {
@@ -485,4 +484,142 @@ a {
 }
 .section-logo {
   grid-area: logo;
+}
+
+
+
+
+
+/* mediaqueries */
+/* mediaquerie deckstop */
+
+@media (max-width: 1024px) {
+  
+/* tamaños fonts */
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4, p {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 1.5em;
+  }
+  a {
+    font-size: 1.5em;
+  }
+/* INDEX */
+/* index-img */
+  .index-imgs {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .section-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .section-card img {
+    padding: 0px;
+    width: 200px;
+  }
+  .card-text {
+    text-align: start;
+  }
+/* index-video */
+  .index-video {
+  grid-template-columns: 1fr;  
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas:
+  "video1"
+  "video2" 
+  "music";
+  gap:30px;
+  }
+
+/* NOSOTROS */
+/* historia que es */
+  .historia-contain-que-es {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .historia-contain-historia-div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 30px;
+  }
+  .historia-contain-historia {
+    grid-template-columns: 1fr;
+  }
+  .historia-contain-historia-article {
+    height: 300px;
+  }
+
+
+
+}
+
+/* mediaquerie tablet */
+
+@media (max-width: 768px) {
+
+/* INDEX */
+/* index portada */
+  .carousel-caption a{
+    font-size: 1em;
+  }
+/* index-imgs */
+  .section-card {
+    flex-direction: column;
+  }
+  .section-card img {
+    width: 300px;
+  }
+  .card-text {
+    text-align: center;
+  }
+/* index-video */
+  .c1, .c2 {
+    flex-direction: column;
+  }
+  .c1 iframe, .c2 iframe, .c1 div, .c2 div {
+    width: 100%;
+  }
+
+/* NOSOTROS */
+/* historia que es */
+.historia-contain-que-es p {
+  height: 450px;
+  overflow: auto;
+}
+
+
+/* FOOTER */
+/* footer a */
+  .footer-ul2 {
+    font-size:.75em;
+  }
+}
+
+/* mediaqueries phone */
+@media (max-width: 480px) {
+
+  /* index portada */
+  .carousel-caption a{
+    font-size: .75em;
+  }
+
+  /* index-img */
+  .section-card img {
+    width: 250px;
+  }
+
+  /* index-video */
+  .c1 iframe, .c2 iframe, .c1 div, .c2 div {
+    height: 50%;
+  }
 }

@@ -1,0 +1,47 @@
+/* ----------------- nosotros ------------------ */
+
+.main-nosotros {
+    padding: 150px 50px 50px 50px;
+  }
+  
+  .historia-contain-que-es {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:50px;
+    background-color: rgb(244, 244, 244);
+    padding: 50px;
+    border-radius: 25px;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .historia-contain-que-es img {
+    border-radius: 20px;
+  }
+  
+  .historia-contain-que-es article h2{
+    text-align: center;
+  }
+  
+  .historia-contain-historia {
+    display: grid;
+    grid-template-columns: .4fr 1fr 2fr;
+    column-gap: 30px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 25px;
+    padding: 50px;
+  }
+  
+  .historia-contain-historia-article {
+    height: 650px;
+    overflow: auto;
+  }
+  .carousel-fade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-item img {
+    padding: 20px 0px 0px 0px;
+  }
+  

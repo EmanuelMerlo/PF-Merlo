@@ -1,0 +1,52 @@
+/* ----------------- pilotos ------------------ */
+
+.main-pilotos {
+    padding: 150px 50px 50px 50px;
+  }
+  
+  .content-pilotos {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo logo"
+    "piloto1 piloto2"
+    ;
+  }
+  
+  .pilotos-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    gap: 20px;
+  }
+  
+  .pilotos-div aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pilotos-div img {
+    width: 50%;
+  }
+  .div-flag {
+    border-radius: 15px;
+    width: 30%;
+  }
+  
+  .mb1 img, .mb2 img {
+    border-bottom: 5px solid rgb(108, 211, 190);
+    border-radius: 60px;
+    width: 60%;
+  }
+  .mb1 {
+    grid-area: piloto1;
+  }
+  .mb2 {
+    grid-area: piloto2;
+  }
+  .section-logo {
+    grid-area: logo;
+  }
+  

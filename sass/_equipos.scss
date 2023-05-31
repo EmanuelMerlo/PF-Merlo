@@ -1,0 +1,118 @@
+/* ----------------- equipos ------------------ */
+
+.main-equipos {
+    padding: 150px 50px 50px 50px;
+  }
+  
+  .equipo {
+    min-height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 30px;
+    border-bottom: 8px solid rgba(0, 0, 0, 0);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+  }
+  
+  .section-div {
+    align-self: center;
+  }
+  
+  .main-equipos h2 {
+    text-align: left;
+    transition: .4s;
+    display: inline-block;
+  }
+  
+  .main-equipos img {
+    width: 45%;
+    object-fit: cover;
+    border-radius: 80px;
+    padding: 10px;
+    transition: .4s;
+  }
+  
+  /*----------- hover´s ---------*/
+  
+  .equipo:hover {
+    border-bottom-right-radius: 50px;
+    transition: border .5s;
+  }
+  .eq1:hover {
+    border-bottom: 8px solid rgb(108, 211, 190);
+    border-right: 8px solid rgb(108, 211, 190);
+  }
+  .eq2:hover {
+    border-bottom: 8px solid rgb(249, 21 , 54);
+    border-right: 8px solid rgb(249, 21 , 54);
+  }
+  .eq3:hover {
+    border-bottom: 8px solid rgb(54, 113, 197);
+    border-right: 8px solid rgb(54, 113, 197);
+  }
+  .eq4:hover {
+    border-bottom: 8px solid rgb(53, 140, 117);
+    border-right: 8px solid rgb(53, 140, 117);
+  }
+  .eq5:hover {
+    border-bottom: 8px solid rgb(245, 128, 32);
+    border-right: 8px solid rgb(245, 128, 32);
+  }
+  .eq6:hover {
+    border-bottom: 8px solid rgb(201, 45, 75);
+    border-right: 8px solid rgb(201, 45, 75);
+  }
+  .eq7:hover {
+    border-bottom: 8px solid rgb(182, 186, 189);
+    border-right: 8px solid rgb(182, 186, 189);
+  }
+  .eq8:hover {
+    border-bottom: 8px solid rgb(34, 147, 209);
+    border-right: 8px solid rgb(34, 147, 209);
+  }
+  .eq9:hover {
+    border-bottom: 8px solid rgb(94, 143, 170);
+    border-right: 8px solid rgb(94, 143, 170);
+  }
+  .eq10:hover {
+    border-bottom: 8px solid rgb(55, 190, 221);
+    border-right: 8px solid rgb(55, 190, 221);
+  }
+  
+  .section-div h2:hover {
+    text-align: left;
+    font-size: 3.75em;
+    transition: .4s;
+  }
+  .d1 h2:hover {
+    color: rgb(108, 211, 190);
+  }
+  .d2 h2:hover {
+    color: rgb(249, 21 , 54);
+  }
+  .d3 h2:hover {
+    color: rgb(54, 113, 197);
+  }
+  .d4 h2:hover {
+    color: rgb(53, 140, 117);
+  }
+  .d5 h2:hover {
+    color: rgb(245, 128, 32);
+  }
+  .dt6 h2:hover {
+    color: rgb(201, 45, 75);
+  }
+  .d7 h2:hover {
+    color: rgb(182, 186, 189);
+  }
+  .d8 h2:hover {
+    color: rgb(34, 147, 209);
+  }
+  .d9 h2:hover {
+    color: rgb(94, 143, 170);
+  }
+  .d10 h2:hover {
+    color: rgb(55, 190, 221);
+  }
+  

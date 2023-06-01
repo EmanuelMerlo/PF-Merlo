@@ -1,7 +1,6 @@
 @charset "UTF-8";
-/*import*/ /* FUENTES */
-@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Ubuntu:wght@400;700&display=swap");
 /* RESETEO */
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Ubuntu:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0rem;
@@ -10,6 +9,7 @@
   font-size: 10px;
 }
 
+/* FUENTES */
 /* Estilos generales */
 body {
   font-family: "Ubuntu", sans-serif;

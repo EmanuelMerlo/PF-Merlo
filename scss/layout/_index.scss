@@ -1,82 +1,74 @@
-/* ----------------- index ------------------ */
-
-/* section 1 carrusel */
-
-.index-portada {
+/* section one carousel */
+.front-carousel {
     position: relative;
     top: -50px;
+    img {
+      height: 100vh;
+      object-fit: cover;
+    }
   }
   
-  .index-portada .carousel-item img {
-    height: 100vh;
-    object-fit: cover;
-  }
   .carousel-caption {
     padding: 50px;
+    
+    a {
+      text-decoration: none;
+      font-family: "Bruno Ace", cursive;  
+      color: rgb(0,0,0);
+      background-color: rgb(255, 255, 255);
+      border-radius: 30px;
+      padding: 15px;
+      font-size: 1.5em;
+      box-shadow: 0px 10px 0px 0px rgb(0, 0, 0);
+      transition: .4s;
+       
+      &:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 10px 24px 5px rgb(0, 0, 0);
+        transition: .4s;
+      }
+    }
   }
-  .carousel-caption a {
-    text-decoration: none;
-    font-family: "Bruno Ace", cursive;  
-    color: rgb(0,0,0);
-    background-color: rgb(255, 255, 255);
-    border-radius: 30px;
-    padding: 15px;
-    font-size: 1.5em;
-    box-shadow: 0px 10px 0px 0px rgb(0, 0, 0);
-    transition: .4s;
-  }
-  .carousel-caption a:hover {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 10px 24px 5px rgb(0, 0, 0);
-    transition: .4s;
-  }
-  .carousel-item-image1 {
-    background-position: 10px 10px;
-  }
-  
+
   /* section 2 */
-  
   .index-imgs {
     padding: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
     
+    img {
+      border-radius: 300px;
+      padding: 30px;
+      transform: scale(0.8);
+      transition: .4s;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+
+      &:hover {
+        transform: scale(1);
+        transition: .4s;
+        box-shadow: 0px 15px 15px -19px rgb(0, 0, 0);      
+      }
+    }
   }
   
-  .index-imgs img {
-    border-radius: 300px;
-    padding: 30px;
-    transform: scale(0.8);
-    transition: .4s;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  }
-  
-  .index-imgs img:hover {
-    transform: scale(1);
-    transition: .4s;
-    box-shadow: 0px 15px 15px -19px rgb(0, 0, 0);
-  
-  }
-  
-  .card-text {
+  .section-card-text {
     text-align: center;
-  }
-  
-  .a, .b, .c {
+    
+    .a, .b, .c {
     color: rgb(3, 9, 65);
     padding:5px;
-  }
-  
-  .section-card p {
+    }
+
+    p {
     text-align: start;
     border-left: 5px solid rgb(128, 128, 128);
     padding-left: 8px;
+    }
   }
   
   /* section 3 */
-  
   .index-video {
     background-color: rgb(244, 244, 244);
     padding: 50px;

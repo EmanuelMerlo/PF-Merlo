@@ -159,7 +159,7 @@ img {
   width: 99%;
 }
 
-/* section one carousel */
+/* carousel */
 .front-carousel {
   position: relative;
   top: -50px;
@@ -190,7 +190,7 @@ img {
   transition: 0.4s;
 }
 
-/* section 2 */
+/* card's */
 .index-imgs {
   padding: 50px;
   display: grid;
@@ -223,7 +223,7 @@ img {
   padding-left: 8px;
 }
 
-/* section 3 */
+/* iframe */
 .index-video {
   background-color: rgb(244, 244, 244);
   padding: 50px;
@@ -235,32 +235,37 @@ img {
   grid-template-areas: "video1 music" "video2 music";
   gap: 30px;
 }
-
-.c1, .c2 {
+.index-video .c1 {
+  grid-area: video1;
+}
+.index-video .c2 {
+  grid-area: video2;
+  flex-direction: row-reverse;
+}
+.index-video .c3 {
+  grid-area: music;
+}
+.index-video .content-div {
   display: flex;
   gap: 30px;
   justify-content: space-evenly;
 }
-
-.c1 {
-  grid-area: video1;
-}
-
-.c2 {
-  grid-area: video2;
-  flex-direction: row-reverse;
-}
-
-.c3 {
-  grid-area: music;
-}
-
-.c1 iframe, .c2 iframe, .c1 div, .c2 div {
+.index-video .content-div-row {
   width: 50%;
   align-self: center;
 }
-
-.c1 iframe, .c2 iframe {
+.index-video .content-div-row iframe {
+  width: 50%;
+  align-self: center;
+  border-radius: 20px;
+}
+.index-video .content-div-reverse {
+  width: 50%;
+  align-self: center;
+}
+.index-video .content-div-reverse iframe {
+  width: 50%;
+  align-self: center;
   border-radius: 20px;
 }
 

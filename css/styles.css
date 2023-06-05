@@ -213,7 +213,9 @@ img {
 .section-card-text {
   text-align: center;
 }
-.section-card-text .a, .section-card-text .b, .section-card-text .c {
+.section-card-text .a,
+.section-card-text .b,
+.section-card-text .c {
   color: rgb(3, 9, 65);
   padding: 5px;
 }
@@ -250,14 +252,14 @@ img {
   gap: 30px;
   justify-content: space-evenly;
 }
-.index-video .content-div-row {
-  width: 50%;
-  align-self: center;
-}
-.index-video .content-div-row iframe {
+.index-video .content-div-video {
   width: 50%;
   align-self: center;
   border-radius: 20px;
+}
+.index-video .content-div-row {
+  width: 50%;
+  align-self: center;
 }
 .index-video .content-div-reverse {
   width: 50%;
@@ -508,14 +510,15 @@ img {
 
 /* mediaquerie deckstop */
 @media (max-width: 1024px) {
-  /* tamaños fonts */
+  /* fonts */
   h2 {
     font-size: 2.5em;
   }
   h3 {
     font-size: 2em;
   }
-  h4, p {
+  h4,
+  p {
     font-size: 1.5em;
   }
   h5 {
@@ -534,7 +537,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0p;
   }
   .section-card img {
     padding: 0px;
@@ -548,7 +550,14 @@ img {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 2fr;
     grid-template-areas: "video1" "video2" "music";
-    gap: 30px;
+    gap: 80px;
+  }
+  .index-video .content-div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .index-video .content-div-row, .index-video .content-div-reverse, .index-video .content-div-video {
+    width: 100%;
   }
   /* NOSOTROS */
   /* historia que es */
@@ -586,10 +595,7 @@ img {
     text-align: center;
   }
   /* index-video */
-  .c1, .c2 {
-    flex-direction: column;
-  }
-  .c1 iframe, .c2 iframe, .c1 div, .c2 div {
+  .index-video .content-div-video, .index-video .content-div-row, .index-video .content-div-reverse {
     width: 100%;
   }
   /* NOSOTROS */
@@ -615,7 +621,10 @@ img {
     width: 250px;
   }
   /* index-video */
-  .c1 iframe, .c2 iframe, .c1 div, .c2 div {
+  .c1 iframe,
+  .c2 iframe,
+  .c1 div,
+  .c2 div {
     height: 50%;
   }
 }

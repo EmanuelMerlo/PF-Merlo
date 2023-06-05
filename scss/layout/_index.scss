@@ -56,7 +56,9 @@
 .section-card-text {
   text-align: center;
 
-  .a, .b, .c {
+  .a,
+  .b,
+  .c {
     color: rgb(3, 9, 65);
     padding: 5px;
   }
@@ -97,16 +99,16 @@
     gap: 30px;
     justify-content: space-evenly;
 
+    &-video {
+      width: 50%;
+      align-self: center;
+      border-radius: 20px;
+    }
+
     &-row {
       //tendria que ir un mixin o extend
       width: 50%;
       align-self: center;
-
-      iframe {
-        width: 50%;
-        align-self: center;
-        border-radius: 20px;
-      }
     }
 
     &-reverse {

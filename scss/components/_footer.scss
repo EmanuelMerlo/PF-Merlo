@@ -1,5 +1,5 @@
 footer {
-    background-color: rgb(0, 0, 0);
+    background-color: $tertiary-color;
     margin-top: 100px;
     text-align: center;
     border-radius: 0px 90px 0px 0px;
@@ -14,13 +14,13 @@ footer {
     display: inline-block;
   }
   footer a svg {
-    color: rgb(228, 28, 28);
+    color: $primary-color;
     scale: 100%;
     transition: .4s;
   }
   
   footer a svg:hover{
-    color: rgb(255, 255, 255);
+    color: $secondary-color;
     scale: 140%;
     transition:.4s;
   }

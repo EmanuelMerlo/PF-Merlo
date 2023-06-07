@@ -13,8 +13,7 @@ header {
   top: 0;
   z-index: 5;
 }
-
-.navbar {
+header .navbar {
   background-color: rgb(255, 0, 0);
   padding: 5px;
   border-bottom-right-radius: 60px;
@@ -22,10 +21,29 @@ header {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
 }
 
+.navbar-brand h4 {
+  color: rgb(255, 255, 255);
+  padding: 35px;
+}
+
 .navbar-nav {
   text-align: center;
   padding: 25px 10px;
   margin-right: 10px;
+}
+.navbar-nav .nav-item {
+  display: inline-block;
+  padding: 15px;
+}
+.navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.75em;
+  transition: 0.4s;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: rgba(0, 0, 0, 0.5647058824);
+  transition: 0.4s;
 }
 
 .navbar-toggler {
@@ -33,20 +51,11 @@ header {
   margin-bottom: 15px;
 }
 
-.nav-item {
-  display: inline-block;
-  padding: 15px;
+.carousel-item div {
+  width: auto;
 }
-
-.nav-link {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1.75em;
-}
-
-.navbar-brand h4 {
-  color: rgb(255, 255, 255);
-  padding: 35px;
+.carousel-item div a {
+  width: auto;
 }
 
 footer {
@@ -68,7 +77,7 @@ footer ul li {
 }
 
 footer a svg {
-  color: rgb(228, 28, 28);
+  color: rgb(255, 0, 0);
   scale: 100%;
   transition: 0.4s;
 }
@@ -107,21 +116,21 @@ body {
 }
 
 main {
-  color: black;
+  color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
 
 h1 {
   font-family: "Bruno Ace", cursive;
   text-align: center;
-  color: rgb(228, 28, 28);
+  color: rgb(255, 0, 0);
   font-size: 4em;
   top: 50px;
 }
 
 h2, h3, h4, h5 {
   font-family: "Bruno Ace", cursive;
-  color: rgb(228, 28, 28);
+  color: rgb(255, 0, 0);
   padding: 10px 0px;
   font-weight: bold;
 }
@@ -201,7 +210,7 @@ img {
   padding: 30px;
   transform: scale(0.8);
   transition: 0.4s;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px rgb(0, 0, 0);
 }
 .index-imgs img:hover {
   transform: scale(1);
@@ -442,62 +451,93 @@ img {
   color: rgb(55, 190, 221);
 }
 
-/* ----------------- pilotos ------------------ */
 .main-pilotos {
   padding: 150px 50px 50px 50px;
 }
 
 .content-pilotos {
-  margin-top: 50px;
+  height: 400px;
+  margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
-  grid-template-areas: "logo logo" "piloto1 piloto2";
-}
-
-.pilotos-div {
-  display: flex;
-  flex-wrap: wrap;
+  justify-items: center;
   align-items: center;
-  gap: 20px;
+  border-left: 20px solid rgba(0, 0, 0, 0);
+  transition: 0.4s;
 }
-
-.pilotos-div aside {
+.content-pilotos:hover {
+  border-left: 20px solid rgb(108, 211, 190);
+}
+.content-pilotos.ferr:hover {
+  border-left: 20px solid rgb(249, 21, 54);
+}
+.content-pilotos.redb:hover {
+  border-left: 20px solid rgb(54, 113, 197);
+}
+.content-pilotos.astm:hover {
+  border-left: 20px solid rgb(53, 140, 117);
+}
+.content-pilotos.mcl:hover {
+  border-left: 20px solid rgb(245, 128, 32);
+}
+.content-pilotos.alfr:hover {
+  border-left: 20px solid rgb(201, 45, 75);
+}
+.content-pilotos.hass:hover {
+  border-left: 20px solid rgb(182, 186, 189);
+}
+.content-pilotos.alpine:hover {
+  border-left: 20px solid rgb(34, 147, 209);
+}
+.content-pilotos.alfat:hover {
+  border-left: 20px solid rgb(94, 143, 170);
+}
+.content-pilotos.will:hover {
+  border-left: 20px solid rgb(55, 190, 221);
+}
+.content-pilotos-logo {
+  width: 100%;
+}
+.content-pilotos-logo img {
+  object-fit: cover;
+}
+.content-pilotos-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.content-pilotos-div .pilot {
+  width: 40%;
+  border-bottom: 5px solid rgba(19, 19, 19, 0.438);
+  border-radius: 50px;
+}
+.content-pilotos-div aside {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+.content-pilotos-div aside div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.pilotos-div img {
-  width: 50%;
-}
-
-.div-flag {
-  border-radius: 15px;
+.content-pilotos-div aside .flag {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 80px;
   width: 30%;
 }
-
-.mb1 img, .mb2 img {
-  border-bottom: 5px solid rgb(108, 211, 190);
-  border-radius: 60px;
-  width: 60%;
-}
-
-.mb1 {
-  grid-area: piloto1;
-}
-
-.mb2 {
-  grid-area: piloto2;
-}
-
-.section-logo {
-  grid-area: logo;
+.content-pilotos-div aside h3 {
+  text-align: center;
 }
 
 @media (max-width: 1450px) {
   .equipo-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     gap: 20px;
   }

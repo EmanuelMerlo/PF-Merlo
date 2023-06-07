@@ -40,44 +40,44 @@
   transition: border 0.5s;
 
   &.eq1:hover {
-    border-top: 8px solid rgb(108, 211, 190);
-    border-left: 8px solid rgb(108, 211, 190);
+    border-top: 8px solid $color-merc;
+    border-left: 8px solid $color-merc;
   }
   &.eq2:hover {
-    border-top: 8px solid rgb(249, 21, 54);
-    border-left: 8px solid rgb(249, 21, 54);
+    border-top: 8px solid $color-ferr;
+    border-left: 8px solid $color-ferr;
   }
   &.eq3:hover {
-    border-top: 8px solid rgb(54, 113, 197);
-    border-left: 8px solid rgb(54, 113, 197);
+    border-top: 8px solid $color-redb;
+    border-left: 8px solid $color-redb;
   }
   &.eq4:hover {
-    border-top: 8px solid rgb(53, 140, 117);
-    border-left: 8px solid rgb(53, 140, 117);
+    border-top: 8px solid $color-astm;
+    border-left: 8px solid $color-astm;
   }
   &.eq5:hover {
-    border-top: 8px solid rgb(245, 128, 32);
-    border-left: 8px solid rgb(245, 128, 32);
+    border-top: 8px solid $color-mcl;
+    border-left: 8px solid $color-mcl;
   }
   &.eq6:hover {
-    border-top: 8px solid rgb(201, 45, 75);
-    border-left: 8px solid rgb(201, 45, 75);
+    border-top: 8px solid $color-alfr;
+    border-left: 8px solid $color-alfr;
   }
   &.eq7:hover {
-    border-top: 8px solid rgb(182, 186, 189);
-    border-left: 8px solid rgb(182, 186, 189);
+    border-top: 8px solid  $color-hass;
+    border-left: 8px solid  $color-hass;
   }
   &.eq8:hover {
-    border-top: 8px solid rgb(34, 147, 209);
-    border-left: 8px solid rgb(34, 147, 209);
+    border-top: 8px solid $color-alpine;
+    border-left: 8px solid $color-alpine;
   }
   &.eq9:hover {
-    border-top: 8px solid rgb(94, 143, 170);
-    border-left: 8px solid rgb(94, 143, 170);
+    border-top: 8px solid $color-alfat;
+    border-left: 8px solid $color-alfat;
   }
   &.eq10:hover {
-    border-top: 8px solid rgb(55, 190, 221);
-    border-left: 8px solid rgb(55, 190, 221);
+    border-top: 8px solid $color-will;
+    border-left: 8px solid $color-will;
   }
 }
 
@@ -88,32 +88,32 @@
 }
 
 .d1 h2:hover {
-  color: rgb(108, 211, 190);
+  color:$color-merc;
 }
 .d2 h2:hover {
-  color: rgb(249, 21, 54);
+  color:$color-ferr;
 }
 .d3 h2:hover {
-  color: rgb(54, 113, 197);
+  color: $color-redb;
 }
 .d4 h2:hover {
-  color: rgb(53, 140, 117);
+  color: $color-astm;
 }
 .d5 h2:hover {
-  color: rgb(245, 128, 32);
+  color: $color-mcl;
 }
 .dt6 h2:hover {
-  color: rgb(201, 45, 75);
+  color:$color-alfr;
 }
 .d7 h2:hover {
-  color: rgb(182, 186, 189);
+  color: $color-hass;
 }
 .d8 h2:hover {
-  color: rgb(34, 147, 209);
+  color: $color-alpine;
 }
 .d9 h2:hover {
-  color: rgb(94, 143, 170);
+  color: $color-alfat;
 }
 .d10 h2:hover {
-  color: rgb(55, 190, 221);
+  color: $color-will;
 }

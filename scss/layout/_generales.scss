@@ -7,21 +7,21 @@ body {
 }
 
 main {
-  color: black;
-  background-color: rgb(255, 255, 255);
+  color: $tertiary-color;
+  background-color: $secondary-color;
 }
 
 h1 {
   font-family: "Bruno Ace", cursive;
   text-align: center;
-  color: rgb(228, 28, 28);
+  color: $primary-color;
   font-size: 4em;
   top: 50px;
 }
 
 h2, h3, h4, h5 {
   font-family: "Bruno Ace", cursive;
-  color: rgb(228, 28, 28);
+  color: $primary-color;
   padding: 10px 0px;
   font-weight: bold;
 }

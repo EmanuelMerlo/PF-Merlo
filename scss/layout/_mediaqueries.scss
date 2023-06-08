@@ -12,6 +12,18 @@
       object-fit: cover;
     }
   }
+
+  .calendario-content {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 10px;
+
+    .calendario-content-image-float {
+      scale: 70%;
+      top: 750px;
+      right: 15px;
+    }
+  }
 }
 
 /* mediaquerie deckstop */
@@ -105,10 +117,6 @@
   .content-pilotos-div-aside {
     flex-direction: column;
   }
-
-
-
-
 }
 
 //Equipos
@@ -160,6 +168,27 @@
 
     &-aside {
       flex-direction: row;
+    }
+  }
+
+  //calendario
+
+  .calendario-content {
+    padding:80px 20px;
+    &-text {
+      padding: 0px;
+    }
+    &-image {
+      display: flex;
+      flex-direction: column;
+
+      &-principal {
+        border-radius: 50px;
+      }
+
+      &-float {
+        position: inherit;
+      }
     }
   }
 

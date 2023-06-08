@@ -590,6 +590,16 @@ img {
     width: 100%;
     object-fit: cover;
   }
+  .calendario-content {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 10px;
+  }
+  .calendario-content .calendario-content-image-float {
+    scale: 70%;
+    top: 750px;
+    right: 15px;
+  }
 }
 /* mediaquerie deckstop */
 @media (max-width: 1024px) {
@@ -701,6 +711,22 @@ img {
   }
   .content-pilotos-div-aside {
     flex-direction: row;
+  }
+  .calendario-content {
+    padding: 80px 20px;
+  }
+  .calendario-content-text {
+    padding: 0px;
+  }
+  .calendario-content-image {
+    display: flex;
+    flex-direction: column;
+  }
+  .calendario-content-image-principal {
+    border-radius: 50px;
+  }
+  .calendario-content-image-float {
+    position: inherit;
   }
   /* FOOTER */
   /* footer a */

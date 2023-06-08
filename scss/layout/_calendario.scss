@@ -1,0 +1,56 @@
+.calendario {
+  padding: 150px 50px 50px 50px;
+
+  &-content {
+    margin-top: 150px;
+    background-color: $background-color;
+    border-radius: 100px;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    align-items: center;
+    column-gap: 40px;
+
+    &-text {
+      padding: 50px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      &-next {
+        color: $text-color;
+      }
+    }
+
+    &-image {
+      &-principal {
+        border-radius: 100px;
+      }
+
+      &-float {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border-radius: 100px;
+        padding: 40px;
+        position: absolute;
+        top: 680px;
+        right: 95px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;
+        scale: 100%;
+        transition: .4s;
+        box-shadow: 0px 0px 0px 0px $tertiary-color;
+
+        &:hover {
+            transition: .4s;
+            scale: 105%;
+            box-shadow: 0px 0px 20px 0px $tertiary-color;
+        }
+      }
+    }
+  }
+}

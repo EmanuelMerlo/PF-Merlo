@@ -456,17 +456,17 @@ img {
 }
 
 .content-pilotos {
-  height: 400px;
-  margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 40% 60%;
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
+  height: auto;
+  margin-bottom: 50px;
   border-left: 20px solid rgba(0, 0, 0, 0);
   transition: 0.4s;
 }
-.content-pilotos:hover {
+.content-pilotos.merc:hover {
   border-left: 20px solid rgb(108, 211, 190);
 }
 .content-pilotos.ferr:hover {
@@ -496,11 +496,8 @@ img {
 .content-pilotos.will:hover {
   border-left: 20px solid rgb(55, 190, 221);
 }
-.content-pilotos-logo {
+.content-pilotos img {
   width: 100%;
-}
-.content-pilotos-logo img {
-  object-fit: cover;
 }
 .content-pilotos-div {
   display: flex;
@@ -508,31 +505,29 @@ img {
   justify-content: center;
   align-items: center;
 }
-.content-pilotos-div .pilot {
-  width: 40%;
-  border-bottom: 5px solid rgba(19, 19, 19, 0.438);
-  border-radius: 50px;
-}
-.content-pilotos-div aside {
-  width: 500px;
+.content-pilotos-div-aside {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 50px;
 }
-.content-pilotos-div aside div {
+.content-pilotos-div-aside .pilot {
+  width: 50%;
+  border-bottom: 2px solid rgba(19, 19, 19, 0.438);
+  border-radius: 50px;
+}
+.content-pilotos-div-aside div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.content-pilotos-div aside .flag {
+.content-pilotos-div-aside div h4 {
+  text-align: center;
+}
+.content-pilotos-div-aside div img {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 80px;
   width: 30%;
-}
-.content-pilotos-div aside h3 {
-  text-align: center;
 }
 
 @media (max-width: 1450px) {
@@ -543,7 +538,7 @@ img {
   }
   .equipo-content img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 /* mediaquerie deckstop */

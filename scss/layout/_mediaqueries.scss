@@ -1,7 +1,8 @@
-// media para equipos
+// media pre descktop
 
 @media (max-width: 1450px) {
-  
+ 
+  //equipos
   .equipo-content {
     flex-direction: column-reverse;
     justify-content: center;
@@ -9,9 +10,11 @@
 
     img {
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
+
+  //pilotos
 
 }
 

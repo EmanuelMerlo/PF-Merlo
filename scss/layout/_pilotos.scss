@@ -3,52 +3,49 @@
 }
 
 .content-pilotos {
-  height: 400px;
-  margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 40% 60%;
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
-  border-left: 20px solid rgba(0,0,0,0);
+  height: auto;
+  margin-bottom: 50px;
+  border-left: 20px solid rgba(0, 0, 0, 0);
   transition: 0.4s;
 
-  &:hover {
+  &.merc:hover {
     border-left: 20px solid $color-merc;
   }
   &.ferr:hover {
-    border-left: 20px solid $color-ferr;  
+    border-left: 20px solid $color-ferr;
   }
   &.redb:hover {
-    border-left: 20px solid $color-redb;  
+    border-left: 20px solid $color-redb;
   }
   &.astm:hover {
-    border-left: 20px solid $color-astm;  
+    border-left: 20px solid $color-astm;
   }
   &.mcl:hover {
-    border-left: 20px solid $color-mcl;  
+    border-left: 20px solid $color-mcl;
   }
   &.alfr:hover {
-    border-left: 20px solid $color-alfr;  
+    border-left: 20px solid $color-alfr;
   }
   &.hass:hover {
-    border-left: 20px solid $color-hass;  
+    border-left: 20px solid $color-hass;
   }
   &.alpine:hover {
-    border-left: 20px solid $color-alpine;  
+    border-left: 20px solid $color-alpine;
   }
   &.alfat:hover {
-    border-left: 20px solid $color-alfat;  
+    border-left: 20px solid $color-alfat;
   }
   &.will:hover {
-    border-left: 20px solid $color-will;  
+    border-left: 20px solid $color-will;
   }
 
-  &-logo {
+  img {
     width: 100%;
-    img {
-      object-fit: cover;
-    }
   }
 
   &-div {
@@ -57,34 +54,32 @@
     justify-content: center;
     align-items: center;
 
-    .pilot {
-      width: 40%;
-      border-bottom: 5px solid rgba(19, 19, 19, 0.438);
-      border-radius: 50px;
-    }
-
-    aside {
-      width: 500px;
+    &-aside {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: space-evenly;
       align-items: center;
-      gap: 50px;
+
+      .pilot {
+        width: 50%;
+        border-bottom: 2px solid rgba(19, 19, 19, 0.438);
+        border-radius: 50px;
+      }
 
       div {
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
 
-      .flag {
-        border: 2px solid $tertiary-color;
-        border-radius: 80px;
-        width: 30%;
-      }
+        h4 {
+          text-align: center;
+        }
 
-      h3 {
-        text-align: center;
+        img {
+          border: 2px solid $tertiary-color;
+          border-radius: 80px;
+          width: 30%;
+        }        
       }
     }
   }

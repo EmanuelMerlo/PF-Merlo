@@ -8,10 +8,10 @@
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
-  height: auto;
   margin-bottom: 50px;
   border-left: 20px solid rgba(0, 0, 0, 0);
   transition: 0.4s;
+  box-shadow: 100px 50px 200px 200px $background-color;
 
   &.merc:hover {
     border-left: 20px solid $color-merc;
@@ -44,7 +44,7 @@
     border-left: 20px solid $color-will;
   }
 
-  img {
+  &-logo {
     width: 100%;
   }
 
@@ -72,13 +72,14 @@
         align-items: center;
 
         h4 {
+          width: 150px;
           text-align: center;
         }
 
         img {
           border: 2px solid $tertiary-color;
           border-radius: 80px;
-          width: 30%;
+          width: 40%;
         }        
       }
     }

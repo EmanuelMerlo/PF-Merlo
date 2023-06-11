@@ -2,7 +2,7 @@
   padding: 150px 50px 50px 50px;
 
   &-content {
-    margin-top: 150px;
+    margin-top: 50px;
     background-color: $background-color;
     border-radius: 100px;
     padding: 50px 100px;
@@ -20,6 +20,7 @@
 
       &-next {
         color: $text-color;
+        font-family: $secondary-font;
       }
     }
 
@@ -42,14 +43,41 @@
         align-items: center;
         justify-items: center;
         scale: 100%;
-        transition: .4s;
+        transition: 0.4s;
         box-shadow: 0px 0px 0px 0px $tertiary-color;
 
         &:hover {
-            transition: .4s;
-            scale: 105%;
-            box-shadow: 0px 0px 20px 0px $tertiary-color;
+          transition: 0.4s;
+          scale: 105%;
+          box-shadow: 0px 0px 20px 0px $tertiary-color;
         }
+      }
+    }
+  }
+
+  &-content-box {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    &-side {
+      border-radius: 0px 50px 0px 0px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-top: 5px solid $primary-color;
+      border-right: 5px solid $primary-color;
+
+      .title {
+        font-family: $secondary-font;
+        color: $text-color;
+      }
+
+      img {
+        object-fit: cover;
+        border-radius: 30px;
       }
     }
   }

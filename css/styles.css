@@ -461,6 +461,7 @@ img {
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
+  margin-top: 50px;
   margin-bottom: 50px;
   border-left: 20px solid rgba(0, 0, 0, 0);
   transition: 0.4s;
@@ -535,7 +536,7 @@ img {
   padding: 150px 50px 50px 50px;
 }
 .calendario-content {
-  margin-top: 150px;
+  margin-top: 50px;
   background-color: rgb(244, 244, 244);
   border-radius: 100px;
   padding: 50px 100px;
@@ -553,6 +554,7 @@ img {
 }
 .calendario-content-text-next {
   color: rgb(3, 9, 65);
+  font-family: "Bruno Ace", cursive;
 }
 .calendario-content-image-principal {
   border-radius: 100px;
@@ -578,6 +580,30 @@ img {
   transition: 0.4s;
   scale: 105%;
   box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+.calendario-content-box {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 30px;
+}
+.calendario-content-box-side {
+  border-radius: 0px 50px 0px 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 5px solid rgb(255, 0, 0);
+  border-right: 5px solid rgb(255, 0, 0);
+}
+.calendario-content-box-side .title {
+  font-family: "Bruno Ace", cursive;
+  color: rgb(3, 9, 65);
+}
+.calendario-content-box-side img {
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 @media (max-width: 1450px) {

@@ -1,0 +1,55 @@
+.main-content {
+  margin-top: 50px;
+  padding: 50px;
+
+  &-pilots {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+
+    h2 {
+      text-align: center;
+    }
+
+    &-first {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 50px;
+      background-color: $background-color;
+      border-radius: 0px 60px 0px 60px;
+      border-bottom: 10px solid $color-redb;
+      border-left: 10px solid $color-redb;
+
+
+      &-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+
+        span {
+          border: 10px solid $color-redb;
+          height: 100px;
+        }
+
+        img {
+          width: 30%;
+          align-self: center;
+        }
+
+        h3 {
+          color: $color-redb;
+        }
+
+      }
+      &-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    }
+  }
+}

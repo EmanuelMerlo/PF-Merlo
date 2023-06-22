@@ -622,6 +622,10 @@ img {
 .main-content-pilots-third-info h3 {
   color: rgb(53, 140, 117);
 }
+.main-content-pilots-remain {
+  border-bottom: 10px solid rgb(182, 186, 189);
+  border-left: 10px solid rgb(182, 186, 189);
+}
 .main-content-pilots-remain-image div {
   width: 35%;
 }
@@ -637,125 +641,10 @@ img {
 .main-content-pilots-remain-image h3 {
   width: 40%;
   text-align: center;
-}
-.main-content-pilots-remain.pos4 {
-  border-bottom: 10px solid rgb(108, 211, 190);
-  border-left: 10px solid rgb(108, 211, 190);
-}
-.main-content-pilots-remain.pos4 h3 {
-  color: rgb(108, 211, 190);
-}
-.main-content-pilots-remain.pos5 {
-  border-bottom: 10px solid rgb(249, 21, 54);
-  border-left: 10px solid rgb(249, 21, 54);
-}
-.main-content-pilots-remain.pos5 h3 {
-  color: rgb(249, 21, 54);
-}
-.main-content-pilots-remain.pos6 {
-  border-bottom: 10px solid rgb(108, 211, 190);
-  border-left: 10px solid rgb(108, 211, 190);
-}
-.main-content-pilots-remain.pos6 h3 {
-  color: rgb(108, 211, 190);
-}
-.main-content-pilots-remain.pos7 {
-  border-bottom: 10px solid rgb(249, 21, 54);
-  border-left: 10px solid rgb(249, 21, 54);
-}
-.main-content-pilots-remain.pos7 h3 {
-  color: rgb(249, 21, 54);
-}
-.main-content-pilots-remain.pos8 {
-  border-bottom: 10px solid rgb(53, 140, 117);
-  border-left: 10px solid rgb(53, 140, 117);
-}
-.main-content-pilots-remain.pos8 h3 {
-  color: rgb(53, 140, 117);
-}
-.main-content-pilots-remain.pos9 {
-  border-bottom: 10px solid rgb(34, 147, 209);
-  border-left: 10px solid rgb(34, 147, 209);
-}
-.main-content-pilots-remain.pos9 h3 {
-  color: rgb(34, 147, 209);
-}
-.main-content-pilots-remain.pos10 {
-  border-bottom: 10px solid rgb(34, 147, 209);
-  border-left: 10px solid rgb(34, 147, 209);
-}
-.main-content-pilots-remain.pos10 h3 {
-  color: rgb(34, 147, 209);
-}
-.main-content-pilots-remain.pos11 {
-  border-bottom: 10px solid rgb(245, 128, 32);
-  border-left: 10px solid rgb(245, 128, 32);
-}
-.main-content-pilots-remain.pos11 h3 {
-  color: rgb(245, 128, 32);
-}
-.main-content-pilots-remain.pos12 {
-  border-bottom: 10px solid rgb(55, 190, 221);
-  border-left: 10px solid rgb(55, 190, 221);
-}
-.main-content-pilots-remain.pos12 h3 {
-  color: rgb(55, 190, 221);
-}
-.main-content-pilots-remain.pos13 {
-  border-bottom: 10px solid rgb(182, 186, 189);
-  border-left: 10px solid rgb(182, 186, 189);
-}
-.main-content-pilots-remain.pos13 h3 {
   color: rgb(182, 186, 189);
 }
-.main-content-pilots-remain.pos14 {
-  border-bottom: 10px solid rgb(245, 128, 32);
-  border-left: 10px solid rgb(245, 128, 32);
-}
-.main-content-pilots-remain.pos14 h3 {
-  color: rgb(245, 128, 32);
-}
-.main-content-pilots-remain.pos15 {
-  border-bottom: 10px solid rgb(201, 45, 75);
-  border-left: 10px solid rgb(201, 45, 75);
-}
-.main-content-pilots-remain.pos15 h3 {
-  color: rgb(201, 45, 75);
-}
-.main-content-pilots-remain.pos16 {
-  border-bottom: 10px solid rgb(201, 45, 75);
-  border-left: 10px solid rgb(201, 45, 75);
-}
-.main-content-pilots-remain.pos16 h3 {
-  color: rgb(201, 45, 75);
-}
-.main-content-pilots-remain.pos17 {
-  border-bottom: 10px solid rgb(94, 143, 170);
-  border-left: 10px solid rgb(94, 143, 170);
-}
-.main-content-pilots-remain.pos17 h3 {
-  color: rgb(94, 143, 170);
-}
-.main-content-pilots-remain.pos18 {
-  border-bottom: 10px solid rgb(182, 186, 189);
-  border-left: 10px solid rgb(182, 186, 189);
-}
-.main-content-pilots-remain.pos18 h3 {
-  color: rgb(94, 143, 170);
-}
-.main-content-pilots-remain.pos19 {
-  border-bottom: 10px solid rgb(94, 143, 170);
-  border-left: 10px solid rgb(94, 143, 170);
-}
-.main-content-pilots-remain.pos19 h3 {
-  color: rgb(94, 143, 170);
-}
-.main-content-pilots-remain.pos20 {
-  border-bottom: 10px solid rgb(55, 190, 221);
-  border-left: 10px solid rgb(55, 190, 221);
-}
-.main-content-pilots-remain.pos20 h3 {
-  color: rgb(55, 190, 221);
+.main-content-pilots-remain-info div h3 {
+  color: rgb(182, 186, 189);
 }
 
 .calendario {

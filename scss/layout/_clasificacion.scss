@@ -21,17 +21,24 @@
       border-bottom: 10px solid $color-redb;
       border-left: 10px solid $color-redb;
 
-
       &-image {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        gap: 20px;
 
-        span {
-          border: 10px solid $color-redb;
-          height: 100px;
+        &-div {
+          width: 30%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            width: 20px;
+            height: 90px;
+            border: 10px solid $color-redb;
+          }
         }
 
         img {
@@ -41,14 +48,252 @@
 
         h3 {
           color: $color-redb;
+          width: 30%;
         }
-
       }
+
       &-info {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+
+        div {
+          width: 30%;
+
+          h3 {
+            color: $color-redb;
+            text-align: center;
+          }
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &-second {
+      @extend .main-content-pilots-first;
+
+      &-image {
+        @extend .main-content-pilots-first-image;
+
+        div {
+          @extend .main-content-pilots-first-image-div;
+          gap: 20px;
+        }
+        img {
+          width: 25%;
+        }
+      }
+
+      &-info {
+        @extend .main-content-pilots-first-info;
+      }
+    }
+
+    &-third {
+      @extend .main-content-pilots-first;
+      border-bottom: 10px solid $color-astm;
+      border-left: 10px solid $color-astm;
+
+      &-image {
+        @extend .main-content-pilots-first-image;
+
+        div {
+          @extend .main-content-pilots-first-image-div;
+          gap: 20px;
+
+          span {
+            border: 10px solid $color-astm;
+          }
+        }
+
+        img {
+          width: 20%;
+        }
+
+        h3 {
+          color: $color-astm;
+          width: auto;
+        }
+      }
+
+      &-info {
+        @extend .main-content-pilots-first-info;
+
+        h3 {
+          color: $color-astm;
+        }
+      }
+    }
+
+    &-remain {
+      @extend .main-content-pilots-first;
+
+      &-image {
+        @extend .main-content-pilots-first-image;
+
+        div {
+          width: 35%;
+
+          p {
+            font-size: 5em;
+            opacity: 20%;
+            color: $text-color;
+            text-align: center;
+          }
+        }
+
+        img {
+          width: 15%;
+        }
+
+        h3 {
+          width: 40%;
+          text-align: center;
+        }
+      }
+
+      &-info {
+        @extend .main-content-pilots-first-info;
+      }
+
+      &.pos4 {
+        border-bottom: 10px solid $color-merc;
+        border-left: 10px solid $color-merc;
+        
+        h3 {
+          color: $color-merc;
+        }
+      }
+      &.pos5 {
+        border-bottom: 10px solid $color-ferr;
+        border-left: 10px solid $color-ferr;
+        
+        h3 {
+          color: $color-ferr;
+        }
+      }
+      &.pos6 {
+        border-bottom: 10px solid $color-merc;
+        border-left: 10px solid $color-merc;
+        
+        h3 {
+          color: $color-merc;
+        }
+      }
+      &.pos7 {
+        border-bottom: 10px solid $color-ferr;
+        border-left: 10px solid $color-ferr;
+        
+        h3 {
+          color: $color-ferr;
+        }
+      }
+      &.pos8 {
+        border-bottom: 10px solid $color-astm;
+        border-left: 10px solid $color-astm;
+        
+        h3 {
+          color: $color-astm;
+        }
+      }
+      &.pos9 {
+        border-bottom: 10px solid $color-alpine;
+        border-left: 10px solid $color-alpine;
+        
+        h3 {
+          color: $color-alpine;
+        }
+      }
+      &.pos10 {
+        border-bottom: 10px solid $color-alpine;
+        border-left: 10px solid $color-alpine;
+        
+        h3 {
+          color: $color-alpine;
+        }
+      }
+      &.pos11 {
+        border-bottom: 10px solid $color-mcl;
+        border-left: 10px solid $color-mcl;
+        
+        h3 {
+          color: $color-mcl;
+        }
+      }
+      &.pos12 {
+        border-bottom: 10px solid $color-will;
+        border-left: 10px solid $color-will;
+        
+        h3 {
+          color: $color-will;
+        }
+      }
+      &.pos13 {
+        border-bottom: 10px solid $color-hass;
+        border-left: 10px solid $color-hass;
+        
+        h3 {
+          color: $color-hass;
+        }
+      }
+      &.pos14 {
+        border-bottom: 10px solid $color-mcl;
+        border-left: 10px solid $color-mcl;
+        
+        h3 {
+          color: $color-mcl;
+        }
+      }
+      &.pos15 {
+        border-bottom: 10px solid $color-alfr;
+        border-left: 10px solid $color-alfr;
+        
+        h3 {
+          color: $color-alfr;
+        }
+      }
+      &.pos16 {
+        border-bottom: 10px solid $color-alfr;
+        border-left: 10px solid $color-alfr;
+        
+        h3 {
+          color: $color-alfr;
+        }
+      }
+      &.pos17 {
+        border-bottom: 10px solid $color-alfat;
+        border-left: 10px solid $color-alfat;
+        
+        h3 {
+          color: $color-alfat;
+        }
+      }
+      &.pos18 {
+        border-bottom: 10px solid $color-hass;
+        border-left: 10px solid $color-hass;
+        
+        h3 {
+          color: $color-alfat;
+        }
+      }
+      &.pos19 {
+        border-bottom: 10px solid $color-alfat;
+        border-left: 10px solid $color-alfat;
+        
+        h3 {
+          color: $color-alfat;
+        }
+      }
+      &.pos20 {
+        border-bottom: 10px solid $color-will;
+        border-left: 10px solid $color-will;
+        
+        h3 {
+          color: $color-will;
+        }
       }
     }
   }

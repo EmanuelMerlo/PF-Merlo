@@ -60,7 +60,7 @@ header .navbar {
 
 footer {
   background-color: rgb(0, 0, 0);
-  margin-top: 100px;
+  margin-top: 10px;
   text-align: center;
   border-radius: 0px 90px 0px 0px;
 }
@@ -570,15 +570,17 @@ img {
 .main-content-pilots-first-image-div span, .main-content-pilots-third-image div span, .main-content-pilots-second-image div span {
   width: 20px;
   height: 90px;
+  border-radius: 0px 15px 0px 15px;
   border: 10px solid rgb(54, 113, 197);
 }
 .main-content-pilots-first-image img, .main-content-pilots-remain-image img, .main-content-pilots-third-image img, .main-content-pilots-second-image img {
-  width: 30%;
+  width: 25%;
   align-self: center;
 }
 .main-content-pilots-first-image h3, .main-content-pilots-remain-image h3, .main-content-pilots-third-image h3, .main-content-pilots-second-image h3 {
   color: rgb(54, 113, 197);
   width: 30%;
+  text-align: center;
 }
 .main-content-pilots-first-info, .main-content-pilots-remain-info, .main-content-pilots-third-info, .main-content-pilots-second-info {
   display: flex;
@@ -587,7 +589,7 @@ img {
   align-items: center;
 }
 .main-content-pilots-first-info div, .main-content-pilots-remain-info div, .main-content-pilots-third-info div, .main-content-pilots-second-info div {
-  width: 30%;
+  width: 25%;
 }
 .main-content-pilots-first-info div h3, .main-content-pilots-remain-info div h3, .main-content-pilots-third-info div h3, .main-content-pilots-second-info div h3 {
   color: rgb(54, 113, 197);
@@ -602,6 +604,10 @@ img {
 .main-content-pilots-second-image img {
   width: 25%;
 }
+.main-content-pilots-second-info h3 {
+  color: rgb(53, 140, 117);
+  text-align: center;
+}
 .main-content-pilots-third {
   border-bottom: 10px solid rgb(53, 140, 117);
   border-left: 10px solid rgb(53, 140, 117);
@@ -613,13 +619,13 @@ img {
   border: 10px solid rgb(53, 140, 117);
 }
 .main-content-pilots-third-image img {
-  width: 20%;
+  width: 25%;
 }
 .main-content-pilots-third-image h3 {
   color: rgb(53, 140, 117);
   width: auto;
 }
-.main-content-pilots-third-info h3 {
+.main-content-pilots-third-info div h3 {
   color: rgb(53, 140, 117);
 }
 .main-content-pilots-remain {
@@ -644,6 +650,150 @@ img {
   color: rgb(182, 186, 189);
 }
 .main-content-pilots-remain-info div h3 {
+  color: rgb(182, 186, 189);
+}
+.main-content-construct {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 50px;
+}
+.main-content-construct h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.main-content-construct-first, .main-content-construct-third, .main-content-construct-second {
+  margin-bottom: 30px;
+  background-color: rgb(244, 244, 244);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: stretch;
+  border-radius: 0px 60px 0px 60px;
+  border-bottom: 10px solid rgb(54, 113, 197);
+  border-left: 10px solid rgb(54, 113, 197);
+}
+.main-content-construct-first-image, .main-content-construct-remain-image, .main-content-construct-third-image, .main-content-construct-second-image {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.main-content-construct-first-image-div, .main-content-construct-second-image-div, .main-content-construct-remain-image-div, .main-content-construct-third-image-div {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-content-construct-first-image-div span, .main-content-construct-second-image-div span, .main-content-construct-remain-image-div span, .main-content-construct-third-image-div span {
+  width: 20px;
+  height: 90px;
+  border-radius: 0px 15px 0px 15px;
+  border: 10px solid rgb(54, 113, 197);
+}
+.main-content-construct-first-image img, .main-content-construct-remain-image img, .main-content-construct-third-image img, .main-content-construct-second-image img {
+  width: 50%;
+  object-fit: cover;
+}
+.main-content-construct-first-image h3, .main-content-construct-remain-image h3, .main-content-construct-third-image h3, .main-content-construct-second-image h3 {
+  text-align: center;
+  width: 50%;
+  color: rgb(54, 113, 197);
+}
+.main-content-construct-first-info, .main-content-construct-second-info, .main-content-construct-remain-info, .main-content-construct-third-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+.main-content-construct-first-info div, .main-content-construct-second-info div, .main-content-construct-remain-info div, .main-content-construct-third-info div {
+  width: auto;
+  text-align: center;
+}
+.main-content-construct-first-info div h3, .main-content-construct-second-info div h3, .main-content-construct-remain-info div h3, .main-content-construct-third-info div h3 {
+  color: rgb(54, 113, 197);
+}
+.main-content-construct-second {
+  border-bottom: 10px solid rgb(108, 211, 190);
+  border-left: 10px solid rgb(108, 211, 190);
+}
+.main-content-construct-second-image-div, .main-content-construct-remain-image-div, .main-content-construct-third-image-div {
+  gap: 10px;
+}
+.main-content-construct-second-image-div span, .main-content-construct-remain-image-div span, .main-content-construct-third-image-div span {
+  width: 20px;
+  height: 90px;
+  border-radius: 0px 15px 0px 15px;
+  border: 10px solid rgb(108, 211, 190);
+}
+.main-content-construct-second-image img {
+  width: 50%;
+}
+.main-content-construct-second-image h3 {
+  text-align: center;
+  width: 50%;
+  color: rgb(108, 211, 190);
+}
+.main-content-construct-second-info div, .main-content-construct-remain-info div, .main-content-construct-third-info div {
+  width: auto;
+  text-align: center;
+}
+.main-content-construct-second-info div h3, .main-content-construct-remain-info div h3, .main-content-construct-third-info div h3 {
+  color: rgb(108, 211, 190);
+}
+.main-content-construct-third {
+  border-bottom: 10px solid rgb(53, 140, 117);
+  border-left: 10px solid rgb(53, 140, 117);
+}
+.main-content-construct-third-image-div span {
+  width: 20px;
+  height: 90px;
+  border-radius: 0px 15px 0px 15px;
+  border: 10px solid rgb(53, 140, 117);
+}
+.main-content-construct-third-image img {
+  width: 50%;
+}
+.main-content-construct-third-image h3 {
+  text-align: center;
+  width: 50%;
+  color: rgb(53, 140, 117);
+}
+.main-content-construct-third-info div {
+  width: auto;
+  text-align: center;
+}
+.main-content-construct-third-info div h3 {
+  color: rgb(53, 140, 117);
+}
+.main-content-construct-remain {
+  margin-bottom: 30px;
+  background-color: rgb(244, 244, 244);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: stretch;
+  border-radius: 0px 60px 0px 60px;
+  border-bottom: 10px solid rgb(182, 186, 189);
+  border-left: 10px solid rgb(182, 186, 189);
+}
+.main-content-construct-remain-image-div p {
+  font-size: 5em;
+  color: rgb(182, 186, 189);
+}
+.main-content-construct-remain-image img {
+  width: 50%;
+  object-fit: cover;
+}
+.main-content-construct-remain-image h3 {
+  text-align: center;
+  width: 50%;
+  color: rgb(182, 186, 189);
+}
+.main-content-construct-remain-info div {
+  width: auto;
+  text-align: center;
+}
+.main-content-construct-remain-info div h3 {
   color: rgb(182, 186, 189);
 }
 
@@ -721,7 +871,7 @@ img {
   border-radius: 30px;
 }
 
-@media (max-width: 1450px) {
+@media screen and (max-width: 1450px) {
   .equipo-content {
     flex-direction: column-reverse;
     justify-content: center;
@@ -743,7 +893,7 @@ img {
   }
 }
 /* mediaquerie deckstop */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   /* fonts */
   h2 {
     font-size: 2.5em;
@@ -817,9 +967,44 @@ img {
   .content-pilotos-div-aside {
     flex-direction: column;
   }
+  .main-content-pilots-first,
+  .main-content-pilots-second,
+  .main-content-pilots-third,
+  .main-content-pilots-remain {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .main-content-pilots-first-image div,
+  .main-content-pilots-second-image div,
+  .main-content-pilots-third-image div,
+  .main-content-pilots-remain-image div {
+    width: 25%;
+  }
+  .main-content-pilots-first-image img,
+  .main-content-pilots-second-image img,
+  .main-content-pilots-third-image img,
+  .main-content-pilots-remain-image img {
+    width: 25%;
+  }
+  .main-content-pilots-first-image h3,
+  .main-content-pilots-second-image h3,
+  .main-content-pilots-third-image h3,
+  .main-content-pilots-remain-image h3 {
+    width: 25%;
+  }
+  .main-content-construct-first,
+  .main-content-construct-second,
+  .main-content-construct-third,
+  .main-content-construct-remain {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .calendario-content-box {
+    grid-template-columns: 1fr;
+  }
 }
 /* mediaquerie tablet */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /* INDEX */
   /* index portada */
   .carousel-caption a {
@@ -874,9 +1059,15 @@ img {
   .footer-ul2 {
     font-size: 0.75em;
   }
+  .main-content-pilots-first-info,
+  .main-content-pilots-second-info,
+  .main-content-pilots-third-info,
+  .main-content-pilots-remain-info {
+    flex-direction: column;
+  }
 }
 /* mediaqueries phone */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   /* index portada */
   .carousel-caption a {
     font-size: 0.75em;
@@ -894,6 +1085,57 @@ img {
   }
   .content-pilotos-div-aside {
     flex-direction: column;
+  }
+  .main-content-pilots-first-image,
+  .main-content-pilots-second-image,
+  .main-content-pilots-third-image,
+  .main-content-pilots-remain-image {
+    flex-wrap: wrap-reverse;
+  }
+  .main-content-pilots-first-image-div, .main-content-pilots-second-image div, .main-content-pilots-third-image div,
+  .main-content-pilots-second-image-div,
+  .main-content-pilots-third-image-div,
+  .main-content-pilots-remain-image-div {
+    width: 100px;
+  }
+  .main-content-pilots-first-image img,
+  .main-content-pilots-second-image img,
+  .main-content-pilots-third-image img,
+  .main-content-pilots-remain-image img {
+    width: 200px;
+  }
+  .main-content-pilots-first-image h3,
+  .main-content-pilots-second-image h3,
+  .main-content-pilots-third-image h3,
+  .main-content-pilots-remain-image h3 {
+    width: 200px;
+  }
+  .main-content-construct-first-image,
+  .main-content-construct-second-image,
+  .main-content-construct-third-image,
+  .main-content-construct-remain-image {
+    flex-wrap: wrap-reverse;
+    height: auto;
+  }
+  .main-content-construct-first-image-div,
+  .main-content-construct-second-image-div,
+  .main-content-construct-third-image-div,
+  .main-content-construct-remain-image-div {
+    width: 100px;
+    padding: 10px;
+  }
+  .main-content-construct-first-image img,
+  .main-content-construct-second-image img,
+  .main-content-construct-third-image img,
+  .main-content-construct-remain-image img {
+    width: 200px;
+  }
+  .main-content-construct-first-image h3,
+  .main-content-construct-second-image h3,
+  .main-content-construct-third-image h3,
+  .main-content-construct-remain-image h3 {
+    display: none;
+    width: 200px;
   }
 }
 

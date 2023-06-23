@@ -37,18 +37,20 @@
           span {
             width: 20px;
             height: 90px;
+            border-radius: 0px 15px 0px 15px;
             border: 10px solid $color-redb;
           }
         }
 
         img {
-          width: 30%;
+          width: 25%;
           align-self: center;
         }
 
         h3 {
           color: $color-redb;
           width: 30%;
+          text-align: center;
         }
       }
 
@@ -59,7 +61,7 @@
         align-items: center;
 
         div {
-          width: 30%;
+          width: 25%;
 
           h3 {
             color: $color-redb;
@@ -89,6 +91,11 @@
 
       &-info {
         @extend .main-content-pilots-first-info;
+
+        h3 {
+          color: $color-astm;
+          text-align: center;
+        }
       }
     }
 
@@ -110,7 +117,7 @@
         }
 
         img {
-          width: 20%;
+          width: 25%;
         }
 
         h3 {
@@ -122,20 +129,22 @@
       &-info {
         @extend .main-content-pilots-first-info;
 
-        h3 {
-          color: $color-astm;
+        div {
+          h3 {
+            color: $color-astm;
+          }
         }
       }
     }
 
     &-remain {
       @extend .main-content-pilots-first;
-        border-bottom: 10px solid $color-hass;
-        border-left: 10px solid $color-hass;
+      border-bottom: 10px solid $color-hass;
+      border-left: 10px solid $color-hass;
 
       &-image {
         @extend .main-content-pilots-first-image;
-        
+
         div {
           width: 35%;
 
@@ -162,7 +171,215 @@
         @extend .main-content-pilots-first-info;
 
         div {
-          
+          h3 {
+            color: $color-hass;
+          }
+        }
+      }
+    }
+  }
+
+  &-construct {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 50px;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    &-first {
+      margin-bottom: 30px;
+      background-color: $background-color;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      justify-items: stretch;
+      border-radius: 0px 60px 0px 60px;
+      border-bottom: 10px solid $color-redb;
+      border-left: 10px solid $color-redb;
+
+      &-image {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        &-div {
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            width: 20px;
+            height: 90px;
+            border-radius: 0px 15px 0px 15px;
+            border: 10px solid $color-redb;
+          }
+        }
+
+        img {
+          width: 50%;
+          object-fit: cover;
+        }
+
+        h3 {
+          text-align: center;
+          width: 50%;
+          color: $color-redb;
+        }
+      }
+
+      &-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+
+        div {
+          width: auto;
+          text-align: center;
+
+          h3 {
+            color: $color-redb;
+          }
+        }
+      }
+    }
+
+    &-second {
+      @extend .main-content-construct-first;
+      border-bottom: 10px solid $color-merc;
+      border-left: 10px solid $color-merc;
+
+      &-image {
+        @extend .main-content-construct-first-image;
+
+        &-div {
+          @extend .main-content-construct-first-image-div;
+          gap: 10px;
+
+          span {
+            width: 20px;
+            height: 90px;
+            border-radius: 0px 15px 0px 15px;
+            border: 10px solid $color-merc;
+          }
+        }
+
+        img {
+          width: 50%;
+        }
+
+        h3 {
+          text-align: center;
+          width: 50%;
+          color: $color-merc;
+        }
+      }
+
+      &-info {
+        @extend .main-content-construct-first-info;
+
+        div {
+          width: auto;
+          text-align: center;
+
+          h3 {
+            color: $color-merc;
+          }
+        }
+      }
+    }
+
+    &-third {
+      @extend .main-content-construct-first;
+      border-bottom: 10px solid $color-astm;
+      border-left: 10px solid $color-astm;
+
+      &-image {
+        @extend .main-content-construct-first-image;
+
+        &-div {
+          @extend .main-content-construct-second-image-div;
+
+          span {
+            width: 20px;
+            height: 90px;
+            border-radius: 0px 15px 0px 15px;
+            border: 10px solid $color-astm;
+          }
+        }
+
+        img {
+          width: 50%;
+        }
+
+        h3 {
+          text-align: center;
+          width: 50%;
+          color: $color-astm;
+        }
+      }
+
+      &-info {
+        @extend .main-content-construct-second-info;
+
+        div {
+          width: auto;
+          text-align: center;
+
+          h3 {
+            color: $color-astm;
+          }
+        }
+      }
+    }
+
+    &-remain {
+      margin-bottom: 30px;
+      background-color: $background-color;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      justify-items: stretch;
+      border-radius: 0px 60px 0px 60px;
+      border-bottom: 10px solid $color-hass;
+      border-left: 10px solid $color-hass;
+
+      &-image {
+        @extend .main-content-construct-first-image;
+
+        &-div {
+          @extend .main-content-construct-second-image-div;
+
+          p {
+            font-size: 5em;
+            color: $color-hass;
+          }
+        }
+
+        img {
+          width: 50%;
+          object-fit: cover;
+        }
+
+        h3 {
+          text-align: center;
+          width: 50%;
+          color: $color-hass;
+        }
+      }
+
+      &-info {
+        @extend .main-content-construct-second-info;
+
+        div {
+          width: auto;
+          text-align: center;
+
           h3 {
             color: $color-hass;
           }

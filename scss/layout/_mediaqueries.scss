@@ -1,6 +1,6 @@
 // media pre descktop
 
-@media (max-width: 1450px) {
+@media screen and (max-width: 1450px) {
   //equipos
   .equipo-content {
     flex-direction: column-reverse;
@@ -28,7 +28,7 @@
 
 /* mediaquerie deckstop */
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   /* fonts */
   h2 {
     font-size: 2.5em;
@@ -117,15 +117,49 @@
   .content-pilotos-div-aside {
     flex-direction: column;
   }
+
+  //Clasificacion
+
+  .main-content-pilots-first,
+  .main-content-pilots-second,
+  .main-content-pilots-third,
+  .main-content-pilots-remain {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    &-image {
+      div {
+        width: 25%;
+      }
+
+      img {
+        width: 25%;
+      }
+
+      h3 {
+        width: 25%;
+      }
+    }
+  }
+
+  .main-content-construct-first,
+  .main-content-construct-second,
+  .main-content-construct-third,
+  .main-content-construct-remain {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  //Calendario
+
+  .calendario-content-box {
+    grid-template-columns: 1fr;
+  }
 }
-
-//Equipos
-
-//pilotos
 
 /* mediaquerie tablet */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /* INDEX */
   /* index portada */
   .carousel-caption a {
@@ -174,7 +208,7 @@
   //calendario
 
   .calendario-content {
-    padding:80px 20px;
+    padding: 80px 20px;
     &-text {
       padding: 0px;
     }
@@ -197,10 +231,22 @@
   .footer-ul2 {
     font-size: 0.75em;
   }
+
+  //Clasificacion
+
+  .main-content-pilots-first,
+  .main-content-pilots-second,
+  .main-content-pilots-third,
+  .main-content-pilots-remain {
+    &-info {
+      flex-direction: column;
+    }
+  }
 }
 
 /* mediaqueries phone */
-@media (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
   /* index portada */
   .carousel-caption a {
     font-size: 0.75em;
@@ -223,5 +269,48 @@
 
   .content-pilotos-div-aside {
     flex-direction: column;
+  }
+
+  //clasificacion
+
+  .main-content-pilots-first,
+  .main-content-pilots-second,
+  .main-content-pilots-third,
+  .main-content-pilots-remain {
+    &-image {
+      flex-wrap: wrap-reverse;
+
+      &-div {
+        width: 100px;
+      }
+      img {
+        width: 200px;
+      }
+      h3 {
+        width: 200px;
+      }
+    }
+  }
+
+  .main-content-construct-first,
+  .main-content-construct-second,
+  .main-content-construct-third,
+  .main-content-construct-remain {
+    &-image {
+      flex-wrap: wrap-reverse;
+      height: auto;
+
+      &-div {
+        width: 100px;
+        padding: 10px;
+      }
+      img {
+        width: 200px;
+      }
+      h3 {
+        display: none;
+        width: 200px;
+      }
+    }
   }
 }

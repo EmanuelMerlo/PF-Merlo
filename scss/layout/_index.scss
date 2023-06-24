@@ -31,7 +31,6 @@
   }
 }
 
-/* card's */
 .index-imgs {
   padding: 50px;
   display: grid;
@@ -70,7 +69,6 @@
   }
 }
 
-/* iframe */
 .index-video {
   background-color: $background-color;
   padding: 50px;
@@ -106,19 +104,15 @@
     }
 
     &-row {
-      //tendria que ir un mixin o extend
       width: 50%;
       align-self: center;
     }
 
     &-reverse {
-      //tendria que ir un mixin o extend
-      width: 50%;
-      align-self: center;
+      @extend .content-div-row;
 
       iframe {
-        width: 50%;
-        align-self: center;
+        @extend .content-div-row;
         border-radius: 20px;
       }
     }

@@ -64,49 +64,39 @@ footer {
   text-align: center;
   border-radius: 0px 90px 0px 0px;
 }
-
 footer ul {
   text-align: center;
   margin: 0px;
   padding: 0px;
 }
-
 footer ul li {
   padding: 15px;
   display: inline-block;
 }
-
-footer a svg {
+footer ul li a svg {
   color: rgb(255, 0, 0);
   scale: 100%;
   transition: 0.4s;
+  width: 30px;
+  height: 30px;
 }
-
-footer a svg:hover {
+footer ul li a svg:hover {
   color: rgb(255, 255, 255);
   scale: 140%;
   transition: 0.4s;
 }
-
-.footer-ul2 {
+footer .footer-ul2 {
   padding: 0px 0px 20px 0px;
 }
-
-.footer-ul2 a {
+footer .footer-ul2 a {
   font-size: 2em;
   text-decoration: none;
   color: rgb(128, 128, 128);
   transition: 0.4s;
 }
-
-.footer-ul2 a:hover {
+footer .footer-ul2 a:hover {
   transition: 0.4s;
   color: rgb(54, 113, 197);
-}
-
-.bi {
-  width: 30px;
-  height: 30px;
 }
 
 /* FUENTES */
@@ -198,7 +188,6 @@ img {
   transition: 0.4s;
 }
 
-/* card's */
 .index-imgs {
   padding: 50px;
   display: grid;
@@ -233,7 +222,6 @@ img {
   padding-left: 8px;
 }
 
-/* iframe */
 .index-video {
   background-color: rgb(244, 244, 244);
   padding: 50px;
@@ -265,26 +253,18 @@ img {
   align-self: center;
   border-radius: 20px;
 }
-.index-video .content-div-row {
-  width: 50%;
-  align-self: center;
-}
-.index-video .content-div-reverse {
+.index-video .content-div-row, .index-video .content-div-reverse iframe, .index-video .content-div-reverse {
   width: 50%;
   align-self: center;
 }
 .index-video .content-div-reverse iframe {
-  width: 50%;
-  align-self: center;
   border-radius: 20px;
 }
 
-/* ----------------- nosotros ------------------ */
 .main-nosotros {
   padding: 150px 50px 50px 50px;
 }
-
-.historia-contain-que-es {
+.main-nosotros .historia-content-que-es {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
@@ -294,16 +274,13 @@ img {
   align-items: center;
   margin-bottom: 60px;
 }
-
-.historia-contain-que-es img {
-  border-radius: 20px;
-}
-
-.historia-contain-que-es article h2 {
+.main-nosotros .historia-content-que-es article h2 {
   text-align: center;
 }
-
-.historia-contain-historia {
+.main-nosotros .historia-content-que-es img {
+  border-radius: 20px;
+}
+.main-nosotros .historia-content-historia {
   display: grid;
   grid-template-columns: 0.4fr 1fr 2fr;
   column-gap: 30px;
@@ -311,20 +288,63 @@ img {
   border-radius: 25px;
   padding: 50px;
 }
-
-.historia-contain-historia-article {
+.main-nosotros .historia-content-historia-article {
   height: 650px;
   overflow: auto;
 }
-
-.carousel-fade {
+.main-nosotros .historia-content-historia .carousel-fade {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.carousel-item img {
+.main-nosotros .historia-content-historia .carousel-fade img {
   padding: 20px 0px 0px 0px;
+}
+.main-nosotros .section-content h3 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.main-nosotros .section-content-form {
+  background-image: url(/assets/max-verstappen-pit-lane.avif);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 100px 0px 100px;
+}
+.main-nosotros .section-content-form-div {
+  width: auto;
+  padding: 20px;
+  background-color: rgb(244, 244, 244);
+  opacity: 0.9;
+  border-radius: 30px;
+  margin: 10px;
+  border-radius: 40px;
+}
+.main-nosotros .section-content-form-div label {
+  font-size: 2em;
+  padding: 1px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+.main-nosotros .section-content-form-div input {
+  font-size: 2em;
+  padding: 1px;
+  background-color: rgb(244, 244, 244);
+}
+.main-nosotros .section-content-form-div button {
+  font-size: 2em;
+  background-color: rgb(244, 244, 244);
+  transition: 0.4s;
+  text-decoration: none;
+}
+.main-nosotros .section-content-form-div button:hover {
+  scale: 120%;
+  transition: 0.4s;
+  text-decoration: underline;
 }
 
 /* ----------------- equipos ------------------ */
@@ -892,9 +912,7 @@ img {
     right: 15px;
   }
 }
-/* mediaquerie deckstop */
 @media screen and (max-width: 1024px) {
-  /* fonts */
   h2 {
     font-size: 2.5em;
   }
@@ -911,8 +929,6 @@ img {
   a {
     font-size: 1.5em;
   }
-  /* INDEX */
-  /* index-img */
   .index-imgs {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -929,7 +945,6 @@ img {
   .section-card-text {
     text-align: start;
   }
-  /* index-video */
   .index-video {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 2fr;
@@ -940,24 +955,18 @@ img {
     flex-direction: column;
     text-align: center;
   }
-  .index-video .content-div-row, .index-video .content-div-reverse, .index-video .content-div-video {
+  .index-video .content-div-row, .index-video .content-div-reverse iframe, .index-video .content-div-reverse, .index-video .content-div-video {
     width: 100%;
   }
-  /* NOSOTROS */
-  /* historia que es */
-  .historia-contain-que-es {
+  .historia-content-que-es {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
   }
-  .historia-contain-historia-div {
+  .historia-content-historia {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 30px;
+    grid-template-rows: auto;
   }
-  .historia-contain-historia {
-    grid-template-columns: 1fr;
-  }
-  .historia-contain-historia-article {
+  .historia-content-historia-article {
     height: 300px;
   }
   .content-pilotos {
@@ -1003,14 +1012,10 @@ img {
     grid-template-columns: 1fr;
   }
 }
-/* mediaquerie tablet */
 @media screen and (max-width: 768px) {
-  /* INDEX */
-  /* index portada */
   .carousel-caption a {
     font-size: 1em;
   }
-  /* index-imgs */
   .section-card {
     flex-direction: column;
   }
@@ -1020,17 +1025,20 @@ img {
   .section-card-text {
     text-align: center;
   }
-  /* index-video */
   .index-video .content-div-video,
   .index-video .content-div-row,
+  .index-video .content-div-reverse iframe,
   .index-video .content-div-reverse {
     width: 100%;
   }
-  /* NOSOTROS */
-  /* historia que es */
-  .historia-contain-que-es p {
+  .historia-content-que-es p {
     height: 450px;
     overflow: auto;
+  }
+  .section-content-form-div label,
+  .section-content-form-div input,
+  .section-content-form-div button {
+    font-size: 1em;
   }
   .content-pilotos-div {
     flex-direction: column;
@@ -1054,8 +1062,6 @@ img {
   .calendario-content-image-float {
     position: inherit;
   }
-  /* FOOTER */
-  /* footer a */
   .footer-ul2 {
     font-size: 0.75em;
   }
@@ -1066,17 +1072,13 @@ img {
     flex-direction: column;
   }
 }
-/* mediaqueries phone */
 @media screen and (max-width: 480px) {
-  /* index portada */
   .carousel-caption a {
     font-size: 0.75em;
   }
-  /* index-img */
   .section-card img {
     width: 250px;
   }
-  /* index-video */
   .c1 iframe,
   .c2 iframe,
   .c1 div,

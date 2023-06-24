@@ -1,7 +1,5 @@
-// media pre descktop
-
 @media screen and (max-width: 1450px) {
-  //equipos
+  //EQUIPOS
   .equipo-content {
     flex-direction: column-reverse;
     justify-content: center;
@@ -13,6 +11,7 @@
     }
   }
 
+  //CALENDARIO
   .calendario-content {
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -26,10 +25,8 @@
   }
 }
 
-/* mediaquerie deckstop */
-
 @media screen and (max-width: 1024px) {
-  /* fonts */
+  //FONTS
   h2 {
     font-size: 2.5em;
   }
@@ -47,9 +44,7 @@
     font-size: 1.5em;
   }
 
-  /* INDEX */
-  /* index-img */
-
+  //INDEX
   .index-imgs {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -70,7 +65,6 @@
     }
   }
 
-  /* index-video */
   .index-video {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 2fr;
@@ -92,23 +86,23 @@
     }
   }
 
-  /* NOSOTROS */
-  /* historia que es */
-  .historia-contain-que-es {
+  //NOSOTROS
+
+  .historia-content-que-es {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
   }
-  .historia-contain-historia-div {
+
+  .historia-content-historia {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 30px;
+    grid-template-rows: auto;
+
+    &-article {
+      height: 300px;
+    }
   }
-  .historia-contain-historia {
-    grid-template-columns: 1fr;
-  }
-  .historia-contain-historia-article {
-    height: 300px;
-  }
+
+  //PILOTOS
 
   .content-pilotos {
     grid-template-columns: 100%;
@@ -118,7 +112,7 @@
     flex-direction: column;
   }
 
-  //Clasificacion
+  //CLASIFICACION
 
   .main-content-pilots-first,
   .main-content-pilots-second,
@@ -150,23 +144,19 @@
     grid-template-rows: auto;
   }
 
-  //Calendario
+  //CALENDARIO
 
   .calendario-content-box {
     grid-template-columns: 1fr;
   }
 }
 
-/* mediaquerie tablet */
-
 @media screen and (max-width: 768px) {
-  /* INDEX */
-  /* index portada */
+  //INDEX
   .carousel-caption a {
     font-size: 1em;
   }
 
-  /* index-imgs */
   .section-card {
     flex-direction: column;
 
@@ -178,7 +168,6 @@
     }
   }
 
-  /* index-video */
   .index-video {
     .content-div-video,
     .content-div-row,
@@ -187,15 +176,23 @@
     }
   }
 
-  /* NOSOTROS */
+  //NOSOTROS
+  .historia-content-que-es {
 
-  /* historia que es */
-  .historia-contain-que-es p {
-    height: 450px;
-    overflow: auto;
+    p {
+      height: 450px;
+      overflow: auto;
+    }
   }
 
-  //pilotos
+  .section-content-form-div {
+    label,
+    input,
+    button {
+      font-size: 1em;
+    }
+  }
+  //PILOTOS
 
   .content-pilotos-div {
     flex-direction: column;
@@ -205,7 +202,7 @@
     }
   }
 
-  //calendario
+  //CALENDARIO
 
   .calendario-content {
     padding: 80px 20px;
@@ -226,13 +223,13 @@
     }
   }
 
-  /* FOOTER */
-  /* footer a */
+  //FOOTER
+
   .footer-ul2 {
     font-size: 0.75em;
   }
 
-  //Clasificacion
+  //CLASIFICACION
 
   .main-content-pilots-first,
   .main-content-pilots-second,
@@ -244,20 +241,16 @@
   }
 }
 
-/* mediaqueries phone */
-
 @media screen and (max-width: 480px) {
-  /* index portada */
+  //INDEX
   .carousel-caption a {
     font-size: 0.75em;
   }
 
-  /* index-img */
   .section-card img {
     width: 250px;
   }
 
-  /* index-video */
   .c1 iframe,
   .c2 iframe,
   .c1 div,
@@ -265,13 +258,13 @@
     height: 50%;
   }
 
-  //pilotos
+  //PILOTOS
 
   .content-pilotos-div-aside {
     flex-direction: column;
   }
 
-  //clasificacion
+  //CLASIFICACION
 
   .main-content-pilots-first,
   .main-content-pilots-second,
